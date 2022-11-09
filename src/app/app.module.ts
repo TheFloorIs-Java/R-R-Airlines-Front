@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { FlightsComponent } from './flights/flights.component';
 import { CitiesComponent } from './cities/cities.component';
 import { FormsModule } from "@angular/forms";
+import {HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormsModule } from "@angular/forms";
         BrowserModule,
         AppRoutingModule,
         FormsModule,
+        HttpClientModule
 
     ],
   providers: [],
