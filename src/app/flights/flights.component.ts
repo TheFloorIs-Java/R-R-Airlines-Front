@@ -11,11 +11,9 @@ export class FlightsComponent implements OnInit {
   constructor(private fs:FlightsService) { }
 
   ngOnInit(): void {
+  }
 
-
-
-
-
+  onSubmit(){
 
   }
 
