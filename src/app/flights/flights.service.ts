@@ -13,10 +13,10 @@ export class FlightsService {
 
   getFlight(flight:FlightInfo):Observable<Flight[]>{
     console.log(flight)
-    return this.http.post<Flight[]>('http://localhost:8080/api/flights/', flight);
+    return this.http.post<Flight[]>('https://rrairline.azurewebsites.net/api/flights/', flight);
   }
 
   getAllFlights(flight:FlightInfo):Observable<Flight[]>{
-    return this.http.post<Flight[]>('http://localhost:8080/api/flights/departure', flight)
+    return this.http.post<Flight[]>('https://rrairline.azurewebsites.net/api/flights/departure', flight)
   }
 }
