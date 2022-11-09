@@ -7,6 +7,8 @@ import { FlightsService } from './flights.service';
   styleUrls: ['./flights.component.css']
 })
 export class FlightsComponent implements OnInit {
+  depart: string ="";
+  arrival: string ="";
 
   constructor(private fs:FlightsService) { }
 
@@ -14,7 +16,7 @@ export class FlightsComponent implements OnInit {
   }
 
   onSubmit(){
-
+    console.log(this.arrival, this.depart)
   }
 
 }
