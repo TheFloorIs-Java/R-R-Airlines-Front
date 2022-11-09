@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlightsComponent } from './flights/flights.component';
 import { CitiesComponent } from './cities/cities.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -12,11 +13,12 @@ import { CitiesComponent } from './cities/cities.component';
     FlightsComponent,
     CitiesComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
- 
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
